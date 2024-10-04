@@ -1,6 +1,8 @@
 <a id="readme-top"></a>
 ## Portfolio-Website 
 Our portfolio website is designed to effectively showcase our skills and projects, built using HTML, CSS, and JavaScript.
+#
+![image alt](https://github.com/Niranjan421/portfolio-Niranjan/blob/5e8dc8b44374afa43d17a0ad05a6ff9a837dfab4/img/SS.png)
 # Key Features:
 1.Five Sections:
 * Home: An inviting introduction to our work.
