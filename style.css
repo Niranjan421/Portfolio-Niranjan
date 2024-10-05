@@ -93,7 +93,7 @@ section{
      display: flex;
      align-items: center;
      padding: 0 9%;
-     background: url('/img/0.png');
+     
      background-size: cover;
      background-position: center;
 }
@@ -275,9 +275,47 @@ section{
     transition: 3s;
 }
 
-.home-imghover:hover {
-  background: var(--bg-color);
-  opacity: .8;
+/* src/ModelViewerComponent.css */
+
+/* General Reset for Model Viewer */
+model-viewer {
+    display: block; /* Ensure the model-viewer takes full width */
+}
+
+/* 3D section for #threedd */
+#threedd {
+    width: 100%; /* Set the width of the section to 100% */
+    height: auto; /* Set height to auto to maintain aspect ratio */
+    max-width: 700px; /* Limit the maximum width */
+    margin-left: 10rem; /* Align to the left */
+    background: transparent; /* Match the background with the rest of the page */
+    
+}
+
+
+
+
+/* Optional: Style for model-viewer itself */
+model-viewer {
+    width: 100%; /* Take full width of the container */
+    height: auto; /* Height auto to maintain aspect ratio */
+    margin-left: 15%;
+    aspect-ratio: 1; /* Maintain a square aspect ratio */
+    border-radius: 0.8rem; /* Match the border radius of the container */
+}
+
+@media (max-width: 768px) {
+    #threedd {
+        display: none; /* Hide the model viewer on mobile devices */
+    }
+}
+
+/* Media Query for tablet screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #threedd {
+        max-width: 100%; /* Full width on tablets */
+        max-height: 80vh; /* Use 80% of the viewport height */
+    }
 }
 
 /* About section */

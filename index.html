@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut  icon" type="logo" href="/img/g.webp">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Niranjan-Portfolio</title>
 
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!--box icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -52,10 +53,22 @@
     <div class="home-sci">
         <a href="https://github.com/Niranjan421"><i class='bx bxl-github'></i></a>
         <a href="https://www.linkedin.com/in/niranjan-jha-6a5a4b255/"><i class='bx bxl-linkedin'></i></a>
-        <a href=" https://x.com/Sabjiwala98?t=f8Fb6KYpZ9KII4STtXHcCQ&s=08 "><i class='bx bxl-twitter' ></i></a>
+        <a href=" https://x.com/NiranjanML404 "><i class='bx bxl-twitter' ></i></a>
         <span class="animate" style="--i:6;"></span>
     </div>
-
+    
+    <div id="threedd">
+        <model-viewer 
+            src="/robot_playground.glb" 
+            autoplay 
+            
+            disable-zoom
+            >
+        </model-viewer>
+    </div>
+    
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    
      <div class="home-imghover"></div>
      <span class="animate home-img" style="--i:7;"></span>
    </section> 
@@ -107,35 +120,23 @@
 
             <div>
                 
-                <h2>Text Classification Model</h2>
-                <p>I created a sentiment analysis model for the IMDB 50k movie review dataset using ML and NLP
-                    techniques. After
-                    preprocessing the text, I used BoW and TF-IDF to convert it into numerical vectors. Random Forest
-                    achieved the highest
-                    accuracy among tested algorithms. Deployment is planned for future development phases.
+                <h2>Under progress</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At fugit cupiditate praesentium harum, quo aut, facilis omnis obcaecati quod ea distinctio veritatis assumenda ipsum expedita deleniti debitis dolores. Ab provident vitae 
                 </p><br>
                 <a href="#" class="read">CODE LINK <i class='bx bx-link-external'></i></a>
             </div>
 
             <div>
                 
-                <h2>Text Classification Model</h2>
-                <p>I created a sentiment analysis model for the IMDB 50k movie review dataset using ML and NLP
-                    techniques. After
-                    preprocessing the text, I used BoW and TF-IDF to convert it into numerical vectors. Random Forest
-                    achieved the highest
-                    accuracy among tested algorithms. Deployment is planned for future development phases.
+                <h2>Under progress</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero alias, facilis atque, accusantium, autem debitis quisquam quam voluptatum pariatur sequi tenetur itaque nesciunt sunt ut vel cupiditate. Esse consequuntu
                 </p><br>
                 <a href="#" class="read">CODE LINK <i class='bx bx-link-external'></i></a>
             </div>
             <div>
                 
-                <h2>Text Classification Model</h2>
-                <p>I created a sentiment analysis model for the IMDB 50k movie review dataset using ML and NLP
-                    techniques. After
-                    preprocessing the text, I used BoW and TF-IDF to convert it into numerical vectors. Random Forest
-                    achieved the highest
-                    accuracy among tested algorithms. Deployment is planned for future development phases.
+                <h2>Under progress</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perferendis porro eaque placeat magnam necessitatibus exercitationem deleniti repellendus at reprehenderit saepe consequuntur quisquam utfhf fdgd 
                 </p><br>
                 <a href="#" class="read">CODE LINK <i class='bx bx-link-external'></i></a>
             </div>
@@ -287,15 +288,16 @@
     </section>
 
     <!-- contact section design-->
+     
      <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
 
-        <form action="#">
-            <div class="extra">
+        <form action="#" name="contactUS" method="POST" netlify>
+            <div class="extra"> 
                 <p>
                     <i class='bx bxl-gmail icon gmail-icon'></i><span class="animate scroll" style="--i:3;"></span>
                     &nbsp;
-                    <a href="mailto:@adar5298@gmail.com">adar5298@gmail.com</a>
+                    <a href="mailto:@niranjanjhaml404@gmail.com">niranjanjhaml404@gmail.com</a>
                 </p>
                 <p>
                     <i class='bx bx-phone icon phone-icon'></i>&nbsp;
@@ -306,11 +308,11 @@
             
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" name="name" placeholder="Full Name" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
                     <span class="focus"></span>
                 </div>
                 <span class="animate scroll" style="--i:5;"></span>
@@ -329,7 +331,7 @@
             </div> -->
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <span class="focus"></span>
 
                 <span class="animate scroll" style="--i:7;"></span>
@@ -358,7 +360,7 @@
         </div>
      </footer>
 
-    <script src="/script.js"></script>
+    <script src="js/script.js"></script>
 
 
 </body>
