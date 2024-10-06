@@ -301,7 +301,7 @@ model-viewer {
     height: auto; /* Height auto to maintain aspect ratio */
     margin-left: 15%;
     aspect-ratio: 1; /* Maintain a square aspect ratio */
-    border-radius: 0.8rem; /* Match the border radius of the container */
+    
 }
 
 @media (max-width: 768px) {
@@ -881,6 +881,27 @@ span{
 .contact form .btn-box.btns .btn{
     cursor: pointer;
 }
+
+/* Chrome, Safari, Edge autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important; /* Transparent background */
+    background-clip: border-box !important; /* Apply to the entire input */
+    -webkit-text-fill-color: white !important; /* Autofill text color set to white */
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Firefox autofill */
+input:-moz-autofill {
+    box-shadow: 0 0 0 1000px transparent inset !important; /* Transparent background */
+    background-color: transparent !important; /* Background should remain transparent */
+    -webkit-text-fill-color: white !important; /* Set autofill text color to white */
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
 
 /* Footer section */
 
