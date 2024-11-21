@@ -14,11 +14,10 @@
 }
 
 :root {
-    --bg-color: #111111;
-    --second-bg-color: #212121;
+    --bg-color: #081b29;
+    --second-bg-color: #03253b;
     --text-color: #ededed;  
     --main-color:#00abf0;
-    --gradient-color: linear-gradient(90deg, #00ccff, #d400d4);
 }
 
 html {
@@ -94,7 +93,7 @@ section{
      display: flex;
      align-items: center;
      padding: 0 9%;
-     
+     background: url('/img/home.jpg');
      background-size: cover;
      background-position: center;
 }
@@ -125,15 +124,15 @@ section{
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: .1px #a133e0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-text-stroke: .1px var(--main-color);
+    background-image: linear-gradient(var(--main-color),var(--main-color));
     background-repeat: no-repeat;
-    -webkit-background-clip : text;
+    -webkit-background-clip: text;
     background-position: -19rem 0;
 }
 
 .home.show-animate .home-content .text-animate h3{
-    animation: homeBgText 7s linear infinite;
+    animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 }
 
@@ -144,13 +143,13 @@ section{
     left: 0;
     width: 0;
     height: 100%;
-    border-right: 2px solid #a133e0;
+    border-right: 2px solid var(--main-color);
     z-index: -1;
     
 }
 
 .home.show-animate .home-content .text-animate h3::before{
-    animation: homecursorText 7s linear infinite;
+    animation: homecursorText 6s linear infinite;
     animation-delay: 2s;
 
 }
@@ -176,7 +175,7 @@ section{
     align-items: center;
     width: 15rem;
     height: 100%;
-    background: var(--gradient-color);
+    background: var(--main-color);
     border: .2rem solid var(--main-color);
     border-radius: .8rem;
     font-size: 1.8rem;
@@ -202,7 +201,7 @@ section{
 }
 
 .btn-box .btn:nth-child(2)::before{
-    background: var(--gradient-color);
+    background: var(--main-color);
 }
 
 .btn-box .btn::before{
@@ -237,7 +236,7 @@ section{
     width: 40px;
     height: 40px;
     background: transparent;
-    border: .2rem solid #a133e0;
+    border: .2rem solid var(--main-color);
     border-radius: 50%;
     font-size: 20px;
     color: var(--main-color);
@@ -257,7 +256,7 @@ section{
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--gradient-color);
+    background: var(--main-color);
     z-index: -1;
     transition: .5s;
 }
@@ -276,59 +275,12 @@ section{
     transition: 3s;
 }
 
-/* src/ModelViewerComponent.css */
-
-/* General Reset for Model Viewer */
-model-viewer {
-    display: block; /* Ensure the model-viewer takes full width */
-}
-
-/* 3D section for #threedd */
-#threedd {
-    width: 100%; /* Set the width of the section to 100% */
-    height: auto; /* Set height to auto to maintain aspect ratio */
-    max-width: 700px; /* Limit the maximum width */
-    margin-left: 10rem; /* Align to the left */
-    background: transparent; /* Match the background with the rest of the page */
-    
-}
-
-
-
-
-/* Optional: Style for model-viewer itself */
-model-viewer {
-    width: 100%; /* Take full width of the container */
-    height: auto; /* Height auto to maintain aspect ratio */
-    margin-left: 15%;
-    aspect-ratio: 1; /* Maintain a square aspect ratio */
-    
-}
-
-@media (max-width: 768px) {
-    #threedd {
-        display: none; /* Hide the model viewer on mobile devices */
-    }
-}
-
-/* Media Query for tablet screens */
-@media (min-width: 769px) and (max-width: 1024px) {
-    #threedd {
-        max-width: 100%; /* Full width on tablets */
-        max-height: 80vh; /* Use 80% of the viewport height */
-    }
+.home-imghover:hover {
+  background: var(--bg-color);
+  opacity: .8;
 }
 
 /* About section */
-
-h3.gg {
-    font-size: 3.2rem; /* Adjust font size as needed */
-    font-weight: 700; /* Font weight */
-    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); /* Gradient background */
-    -webkit-background-clip: text; /* Clips the background to the text */
-    -webkit-text-fill-color: transparent; /* Makes the text color transparent */
-}
-
 
 .about{
     display: flex;
@@ -346,14 +298,9 @@ h3.gg {
     text-align: center;
 }
 
- span{
-    background: linear-gradient(90deg,#00ccff, #d400d4); /* Gradient from blue to pink */
-    -webkit-background-clip: text; /* For Safari and Chrome */
-    -webkit-text-fill-color: transparent; /* Makes the gradient visible */
-    background-clip: text; /* For other browsers */
-    color: transparent; /* Fallback color */
+span{
+    color: var(--main-color);
 }
-
 
 .about-img{
     position: relative;
@@ -368,7 +315,7 @@ h3.gg {
 .about-img img {
     width: 90%;
     border-radius: 50%;
-    border: .2rem solid #00ccff;
+    border: .2rem solid var(--main-color);
 }
 
 .about-img .circle-spin {
@@ -381,8 +328,8 @@ h3.gg {
     border-radius: 50%;
     border-top: .2rem solid var(--second-bg-color);
     border-bottom: .2rem solid var(--second-bg-color);
-    border-left: .2rem solid #d400d4;
-    border-right: .2rem solid #d400d4;
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
     animation: aboutspinner 8s linear infinite;
 }
 
@@ -467,7 +414,7 @@ h3.gg {
     height: 300px; /* Ensure the box is square */
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
-    box-shadow: 1px 1px 20px #a133e0;
+    box-shadow: 1px 1px 20px var(--main-color);
     display: flex;
     flex-direction: column; /* Stack icon, heading, paragraph, and link vertically */
     justify-content: center;
@@ -516,7 +463,7 @@ h3.gg {
   .read {
     display: inline-block;
     padding: 12px 20px;
-    background: linear-gradient(90deg, #00ccff, #d400d4);;
+    background: var(--main-color);
     border-radius: 40px;
     font-size: 16px;
     color: white;
@@ -530,32 +477,7 @@ h3.gg {
     color: white;
     box-shadow: 0 0 30px var(--main-color);
   }
-  /* Hover effect for service box */
-.services-list div:hover {
-    background-color: var(--second-bg-color); /* Slight background color change */
-    transform: scale(1.05); /* Slightly enlarge the box */
-    box-shadow: 3px 3px 25px var(--main-color); /* Enhance the box-shadow effect */
-}
-
-/* Container for all services-list divs */
-.services-list {
-    position: relative;
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: center; /* Center the boxes */
-    align-items: center; /* Align items vertically */
-    flex-wrap: wrap; /* Allow wrapping if screen is too small */
-    gap: 6rem; /* Set gap to 6rem for space between boxes */
-    padding: 20px; /* Add padding around the container */
-}
-
-/* Styling for the 'read' button hover */
-.read:hover {
-    background: var(--second-bg-color);
-    color: white;
-    box-shadow: 0 0 30px var(--main-color);
-    transform: scale(1.1); /* Slightly enlarge the button */
-}
-
+  
   /* Education section */
 
 .education {
@@ -601,14 +523,14 @@ h3.gg {
     padding-left: 2rem;
 }
 
-.education-box .education-content::before {
+.education-box .education-content::before{
     content: '';
     position: absolute;
     top: 0;
     left: -1.1rem;
     width: 2rem;
     height: 2rem;
-    background: linear-gradient(to right, #00ccff, #d400d4); /* Gradient from blue to pink */
+    background: var(--main-color);
     border-radius: 50%;
 }
 
@@ -644,14 +566,7 @@ h3.gg {
     color: var(--main-color);
     padding-bottom: .5rem;
 }
-/* .education-content .content .year {
-    font-size: 1.5rem;
-    background-image: linear-gradient( #d400d4,#00ccff); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
-    padding-bottom: .5rem;
-}
- */
+
 .education-content .content .year i{
     padding-right: .5rem;
 }
@@ -747,13 +662,12 @@ h3.gg {
     margin: 1rem 0;
 }
 
-.skills-content .progress .bar span {
+.skills-content .progress .bar span{
     display: block;
     height: 100%;
-    border-radius: 0.3rem;
-    background: linear-gradient(to right, #00ccff, #d400d4); /* Blue to Pink gradient */
+    border-radius: .3rem;
+    background: var(--main-color);
 }
-
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
     width: 85%;
@@ -812,27 +726,6 @@ h3.gg {
     }
 }
 
-.gmail-icon {
-    color: var(--main-color); /* Set color for the Gmail icon */
-    font-size: 1.6rem; /* Adjust icon size if needed */
-}
-
-.phone-icon {
-    color: #4caf50; /* Set color for the Phone icon */
-    font-size: 1.5rem; /* Adjust icon size if needed */
-}
-
-.extra{
-    font-size: 1.6rem;
-    position: relative;
-    display: inline-block;
-    
-}
-.extra a{
-    color: var(--text-color);
-
-}
-
 
 
 /* Apply this to input fields on focus */
@@ -880,7 +773,7 @@ h3.gg {
     color: var(--text-color);
     background:transparent;
     border-radius: .6rem;
-    border: .2rem solid #2474dd;
+    border: .2rem solid var(--main-color);
     position: relative;
     z-index: 2;
 }
@@ -930,27 +823,6 @@ h3.gg {
     cursor: pointer;
 }
 
-/* Chrome, Safari, Edge autofill */
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 1000px transparent inset !important; /* Transparent background */
-    background-clip: border-box !important; /* Apply to the entire input */
-    -webkit-text-fill-color: white !important; /* Autofill text color set to white */
-    transition: background-color 5000s ease-in-out 0s;
-}
-
-/* Firefox autofill */
-input:-moz-autofill {
-    box-shadow: 0 0 0 1000px transparent inset !important; /* Transparent background */
-    background-color: transparent !important; /* Background should remain transparent */
-    -webkit-text-fill-color: white !important; /* Set autofill text color to white */
-    transition: background-color 5000s ease-in-out 0s;
-}
-
-
-
 /* Footer section */
 
 .footer{
@@ -977,13 +849,12 @@ input:-moz-autofill {
     justify-content: center;
     align-items: center;
     padding: .8rem;
-    background: linear-gradient(to right, #00ccff, #d400d4); /* Gradient from blue to pink */
-    border: .2rem solid var(--main-color); /* Retain existing border color */
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
     border-radius: .6rem;
     z-index: 1;
     overflow: hidden;
 }
-
 
 .footer-iconTop a::before{
     content: '';
@@ -1105,7 +976,7 @@ section:nth-child(odd) .animate.scroll,
         left: -100%;
         width: 100%;
         padding: 1rem 4%;
-        background: #191919;
+        background: rgb(11, 36, 62);
         box-shadow: 0 .5rem 1rem rgba(0, 0,0, .2);
         z-index: 1;
         transition: .25s ease;
