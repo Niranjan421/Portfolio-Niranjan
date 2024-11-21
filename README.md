@@ -2,7 +2,7 @@
 ## Portfolio-Website 
 Our portfolio website is designed to effectively showcase our skills and projects, built using HTML, CSS, and JavaScript.
 #
-https://github.com/user-attachments/assets/bbdea380-1a25-454a-8d18-1cc3bcd00fa3
+https://github.com/user-attachments/assets/94feb3a1-01ed-4830-8a47-43fb7ef63d06
 # Key Features:
 1.Five Sections:
 * Home: An inviting introduction to our work.
