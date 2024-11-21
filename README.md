@@ -1,6 +1,7 @@
 <a id="readme-top"></a>
 ## Portfolio-Website 
 Our portfolio website is designed to effectively showcase our skills and projects, built using HTML, CSS, and JavaScript.
+  * [NOTE: The code in this repository serves only as a template.]
 #
 https://github.com/user-attachments/assets/94feb3a1-01ed-4830-8a47-43fb7ef63d06
 # Key Features:
